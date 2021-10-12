@@ -1,11 +1,11 @@
 import requests
-from .vtb import vtb
+from .vtb import *
 from hoshino import R, Service, util
 sv=Service('查成分')
 
 
 @sv.on_prefix('查成分')
-async def vtb(bot,ev):
+async def vtb_search(bot,ev):
     
     mid = (ev.message.extract_plain_text().strip())
     
